@@ -74,10 +74,12 @@ header nav {
 }
 
 .services .service-item img {
-    width: 40%;
-    height: auto;
+    width: 40%; /* Standard width for the images */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height to standardize image size */
     border-radius: 5px;
     margin-left: 20px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
 .services .service-content {
