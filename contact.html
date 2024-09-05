@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Civil Engineering Firm</title>
+    <link rel="stylesheet" href="css/sides.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Civil Engineering Firm</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h2>Contact Us</h2>
+    </section>
+
+    <main class="contact-container">
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" action="save_contact.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+
+        <section class="contact-details">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@civilengineeringfirm.com">info@civilengineeringfirm.com</a></p>
+                <p><strong>Address:</strong> 123 Engineering Lane, City, State, ZIP</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Civil Engineering Firm. All rights reserved.</p>
+    </footer>
+</body>
+</html>

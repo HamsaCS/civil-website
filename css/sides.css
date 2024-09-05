@@ -1,0 +1,325 @@
+/* Shared styles for all pages */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #1A3636; /* Dark color for text */
+    background-color: #F4F4F4; /* Light background color */
+}
+
+header {
+    background-color: #40534C; /* Medium green for header background */
+    color: #D6BD98; /* Accent color for header text */
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #D6BD98; /* Accent color for nav links */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.page-banner {
+    background-color: #D6BD98; /* Accent color for page banner */
+    padding: 40px 0;
+    text-align: center;
+    color: #1A3636; /* Dark color for page banner text */
+}
+
+.page-banner h2 {
+    font-size: 36px;
+}
+
+/* Services page */
+.services .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.services .service-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.services .service-item img {
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.services .service-content {
+    width: 55%;
+    text-align: left;
+}
+
+/* Portfolio page */
+.portfolio .project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.portfolio .project-item {
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for project items */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio .project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio .project-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #40534C; /* Medium green for project item headings */
+}
+
+.portfolio .project-item p {
+    font-size: 16px;
+    color: #1A3636; /* Dark color for project item text */
+}
+
+/* Contact page */
+/* Contact page */
+.contact {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the section takes the full height of the viewport */
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #40534C; /* Medium green for contact heading */
+}
+
+.contact #contact-form {
+    width: 100%;
+    max-width: 600px; /* Limits the maximum width of the form */
+    background-color: #fff; /* White background for the form */
+    padding: 20px; /* Adds padding inside the form */
+    border-radius: 10px; /* Rounds the corners of the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+    margin: 20px 0; /* Adds margin around the form */
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #40534C; /* Medium green for form labels */
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #40534C; /* Medium green for submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #677D6A; /* Light green for hover effect */
+    color: #fff;
+}
+
+.contact-details {
+    padding: 20px;
+    background-color: #fff; /* White background for contact details */
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-details p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #1A3636; /* Dark color for contact details text */
+}
+/* Contact Information */
+.contact-details {
+    padding: 20px;
+    background-color: #fff; /* White background for contact details */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+    text-align: left; /* Aligns text to the left for readability */
+    max-width: 600px; /* Limits the width for better readability on large screens */
+    margin-left: auto;
+    margin-right: auto; /* Centers the contact details container */
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #40534C; /* Medium green for the heading */
+    border-bottom: 2px solid #D6BD98; /* Adds an underline to the heading */
+    padding-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between contact information items */
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #1A3636; /* Dark color for contact details text */
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p strong {
+    min-width: 100px; /* Ensures consistent spacing between labels and details */
+    color: #40534C; /* Medium green for strong emphasis */
+}
+
+.contact-info p i {
+    margin-right: 10px; /* Adds space between icons and text */
+    color: #677D6A; /* Light green for icons */
+}
+
+.contact-info p a {
+    color: #40534C; /* Medium green for links */
+    text-decoration: none;
+}
+
+.contact-info p a:hover {
+    text-decoration: underline; /* Adds underline on hover for accessibility */
+}
+/* Footer */
+/* Footer */
+footer {
+    background-color: #40534C; /* Medium green for footer background */
+    color: #D6BD98; /* Accent color for footer text */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; /* Adds space between content and footer */
+    border-top: 1px solid #ccc; /* Adds a top border to differentiate the footer */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    font-size: 16px; /* Standard font size for readability */
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #D6BD98; /* Accent color for links in the footer */
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underlines links on hover for better visibility */
+}
+
+.footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures the links wrap on smaller screens */
+    gap: 20px; /* Adds space between footer links */
+}
+
+.footer-links a {
+    font-size: 14px;
+}
+/* Basic styling for the icons */
+.footer-social {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-social a {
+    display: inline-block; /* Ensure anchor behaves as block for padding */
+    color: inherit; /* Inherit color from specific class */
+    margin: 0 10px; /* Space between icons */
+    font-size: 20px; /* Icon size */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%; /* Make the icon background circular */
+    background-color: #40534C; /* Background color of the icon */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-social a:hover {
+    color: #fff; /* Change icon color on hover */
+    background-color: #677D6A; /* Change background color on hover */
+}
+
+/* Specific styles for different icons */
+.footer-social a.Facebook i {
+    color: #3b5998; /* Facebook blue */
+}
+
+.footer-social a.Twitter i {
+    color: #00acee; /* Twitter blue */
+}
+.footer-social a.LinkdIn i {
+    color: #00acee; /* Twitter blue */
+}
