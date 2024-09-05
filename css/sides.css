@@ -71,21 +71,43 @@ header nav {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .services .service-item img {
-    width: 40%; /* Standard width for the images */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height to standardize image size */
+    width: 40%;
+    height: auto;
+    max-height: 200px;
     border-radius: 5px;
     margin-left: 20px;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.services .service-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 .services .service-content {
     width: 55%;
     text-align: left;
+    transition: color 0.3s ease;
 }
+
+.services .service-content h3:hover {
+    color: #2c7a7b; /* Darker green on hover */
+}
+
+.services .service-content p:hover {
+    color: #36454f; /* Darker color for the text on hover */
+}
+
 
 /* Portfolio page */
 .portfolio .project-gallery {
