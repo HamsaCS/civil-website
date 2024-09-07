@@ -5,26 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Portfolio - Civil Engineering Firm</title>
     <link rel="stylesheet" href="css/sides.css">
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+    </script>
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Civil Engineering Firm</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
+    
 
     <section class="page-banner">
         <h2>Our Portfolio</h2>
@@ -33,32 +24,45 @@
     <section class="portfolio">
         <div class="project-gallery">
             <div class="project-item">
-                <img src="images/project-1.jpg" alt="Project 1">
-                <h3>Commercial Complex</h3>
-                <p>Designed and managed the construction of a state-of-the-art commercial complex.</p>
+                <div class="project-details">
+                    <h3>Commercial Complex</h3>
+                    <p>Designed and managed the construction of a state-of-the-art commercial complex.</p>
+                </div>
+                <div class="project-image">
+                    <img src="images/a.jpg" alt="Project 1">
+                </div>
             </div>
             <div class="project-item">
-                <img src="images/project-2.jpg" alt="Project 2">
-                <h3>Residential Development</h3>
-                <p>Oversaw the development of a luxury residential estate with eco-friendly designs.</p>
+                <div class="project-details">
+                    <h3>Residential Development</h3>
+                    <p>Oversaw the development of a luxury residential estate with eco-friendly designs.</p>
+                </div>
+                <div class="project-image">
+                    <img src="images/a.jpg" alt="Project 2">
+                </div>
             </div>
             <div class="project-item">
-                <img src="images/project-3.jpg" alt="Project 3">
-                <h3>Infrastructure Project</h3>
-                <p>Engineered major infrastructure projects including roads and bridges.</p>
+                <div class="project-details">
+                    <h3>Residential Development</h3>
+                    <p>Oversaw the development of a luxury residential estate with eco-friendly designs.</p>
+                </div>
+                <div class="project-image">
+                    <img src="images/a.jpg" alt="Project 2">
+                </div>
             </div>
             <div class="project-item">
-                <img src="images/project-4.jpg" alt="Project 4">
-                <h3>Water Treatment Plant</h3>
-                <p>Managed the design and construction of a cutting-edge water treatment facility.</p>
+                <div class="project-details">
+                    <h3>Residential Development</h3>
+                    <p>Oversaw the development of a luxury residential estate with eco-friendly designs.</p>
+                </div>
+                <div class="project-image">
+                    <img src="images/a.jpg" alt="Project 2">
+                </div>
             </div>
-            <div class="project-item">
-                <img src="images/project-5.jpg" alt="Project 5">
-                <h3>Industrial Facility</h3>
-                <p>Led the construction of a high-tech industrial manufacturing plant.</p>
-            </div>
+            <!-- Add more projects as needed -->
         </div>
     </section>
+    
 
     <footer>
         <p>&copy; 2024 Civil Engineering Firm. All rights reserved.</p>

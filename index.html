@@ -7,27 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/ea0f4f62d2.js" crossorigin="anonymous"></script>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+    </script>
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Maushmi Engineering Firm</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-
     <section class="hero">
         <div class="hero-content">
             <h2>Your Vision, Our Commitment</h2>
