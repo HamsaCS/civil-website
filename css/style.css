@@ -335,7 +335,8 @@ nav {
 footer {
     background-color: #40534C; /* Medium green color for footer */
     color: #D6BD98; /* Accent color for footer text */
-    text-align: center;
+    /* text-align: center; */
+    flex-direction: column;
     padding: 20px 0;
     position: relative;
     bottom: 0;
