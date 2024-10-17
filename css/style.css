@@ -335,7 +335,7 @@ nav {
 footer {
     background-color: #40534C; /* Medium green color for footer */
     color: #D6BD98; /* Accent color for footer text */
-    /* text-align: center; */
+     text-align:center; 
     flex-direction: column;
     padding: 20px 0;
     position: relative;
@@ -346,6 +346,37 @@ footer {
 footer p {
     margin: 0;
     font-size: 16px;
+}
+footer a{
+    color: #B7A07A;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer footer-social{
+    margin-top: 20px ;
+    text-align: center;
+   
+}
+footer footer-social{
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+footer footer-social{
+    color: #1A3636;
+}
+footer footer-links a{
+    color: #F4F4F4;
+    font-size: 24px;
+    margin: 0,10px;
+    display: inline-block;
 }
 
 /* Responsive adjustments for smaller devices */
@@ -364,5 +395,9 @@ footer p {
 
     .card, .service-item, .project-item {
         max-width: 100%;
+    }
+    .footer footer-social{
+        font-size: 20px;
+        margin: 0 5px;
     }
 }
