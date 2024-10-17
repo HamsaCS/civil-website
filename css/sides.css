@@ -193,10 +193,11 @@ nav {
 
 
 /* Portfolio page */
+/* Portfolio page */
 .portfolio .project-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 2%; /* Add a small gap between items */
+    gap: 2%; /* Keeps a small gap between items */
     justify-content: space-between;
     padding: 20px;
 }
@@ -204,40 +205,41 @@ nav {
 .portfolio .project-item {
     display: flex;
     align-items: center;
-    width: 49%; /* Slightly increase width to fill the container */
-    margin-bottom: 20px;
+    width: 100%; /* Set to full width */
+    margin-bottom: 10px;
     background-color: #fff; /* White background for project items */
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto; /* Keep the height as it was initially */
 }
 
 .portfolio .project-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 16px rgba(40, 1, 1, 0.5);
 }
 
 .portfolio .project-details {
-    width: 60%;
+    width: 60%; /* 60% of the space for details */
     text-align: left;
 }
 
 .portfolio .project-image {
-    width: 35%;
+    width: 40%; /* 35% for the image */
     text-align: right;
 }
 
 .portfolio .project-image img {
     max-width: 100%;
-    height: auto;
+    height: auto; /* Ensures the image adjusts properly */
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
 
 .portfolio .project-image img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Responsive adjustments for smaller screens */
@@ -245,12 +247,12 @@ nav {
     .portfolio .project-item {
         flex-direction: column;
         text-align: center;
-        width: 100%; /* Make items full width on smaller screens */
+        width: 100%; /* Full width on smaller screens */
     }
 
     .portfolio .project-details,
     .portfolio .project-image {
-        width: 100%;
+        width: 100%; /* Full width for content and image */
     }
 
     .portfolio .project-image {
