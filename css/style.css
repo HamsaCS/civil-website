@@ -343,6 +343,11 @@ p {
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
+.cta-button a{
+    text-decoration: none;
+    color: black;
+
+}
 
 .cta-button:hover {
     background-color: #eb7a50; /* Change color on hover */
