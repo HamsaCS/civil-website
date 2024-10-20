@@ -376,8 +376,8 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
     text-align: left; /* Aligns text to the left for readability */
     max-width: 600px; /* Limits the width for better readability on large screens */
-    margin-left: 10px;
-    margin-right: 10px; /* Centers the contact details container */
+    margin-left: auto;
+    margin-right: auto; /* Centers the contact details container */
 }
 
 .contact-details h2 {
