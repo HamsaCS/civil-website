@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Maushmi Civil Engineering Firm</title>
+    <title>Contact Us - Civil Engineering Firm</title>
     <link rel="stylesheet" href="css/sides.css">
     <script src="js/script.js" defer></script>
-    <script src="https://kit.fontawesome.com/ea0f4f62d2.js" crossorigin="anonymous"></script>
+    <style>
+        /* Inline styles to set the width of the contact form */
+        #contact-form {
+            width: 100%; /* Full width of the container */
+            max-width: 800px; /* Adjust the max width to your preference */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -35,53 +41,83 @@
     <main class="contact-container">
         <section class="contact">
             <h2>Get in Touch</h2>
-            <form id="contact-form" action="save_contact.php" method="post">
+            <!-- Custom Form submitting to Google Form -->
+            <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeZodlL6afjpEpuFJK-1huyONkHmg6nZOctJIFW13z85ocRFA/formResponse" method="post" target="hidden_iframe">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="text" id="name" name="entry.1369516099" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <input type="email" id="email" name="entry.91174015" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <textarea id="message" name="entry.862404314" placeholder="Your Message" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn">Submit</button>
             </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+            <div class="thank-you-message" style="display:none;">
+                <h3>Thank you for your inquiry! We will get back to you ASAP.</h3>
+                <button onclick="showForm()">Submit Another Query</button>
+            </div>
         </section>
 
         <section class="contact-details">
             <h2>Contact Information</h2>
             <div class="contact-info">
-                <p><strong>Phone:</strong> <a href="tel:+1234567890">9535449638</a></p>
-                <p><strong>Email:</strong> <a href="mailto:info@civilengineeringfirm.com">maushmi.civil.eng.firm@gmail.com</a></p>
-                <p><strong>Address:</strong>Ullal, Banglore, Karnataka, India.</p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">999999999</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@civilengineeringfirm.com">maushmi@civilengineeringfirm.com</a></p>
+                <p><strong>Address:</strong> Ullal, Bangalore, Karnataka, India</p>
             </div>
         </section>
         
     </main>
 
     <footer>
-        <p>&copy; 2024 Maushmi Civil Engineering Firm. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-of-service.html">Terms of Service</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About Us</a>
-        </div>
-        <div class="footer-social">
-            <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-square-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-square-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-        </div>
+        <p>&copy; Maushmi Civil Engineering Firm. All rights reserved.</p>
     </footer>
+
+    <script>
+        // DOMContentLoaded event to ensure the DOM is fully loaded before running the script
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            const contactForm = document.getElementById("contact-form");
+            const thankYouMessage = document.querySelector(".thank-you-message");
+
+            if (contactForm) {
+                contactForm.addEventListener("submit", function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+                    const formData = new FormData(contactForm);
+                    fetch(contactForm.action, {
+                        method: "POST",
+                        body: formData,
+                        mode: "no-cors"
+                    })
+                    .then(() => {
+                        contactForm.reset(); // Reset the form
+                        contactForm.style.display = "none"; // Hide the form
+                        thankYouMessage.style.display = "block"; // Show the thank you message
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                    });
+                });
+            }
+        });
+
+        function showForm() {
+            document.getElementById("contact-form").style.display = "block"; // Show the form again
+            document.querySelector(".thank-you-message").style.display = "none"; // Hide the thank you message
+        }
+    </script>
 </body>
 </html>

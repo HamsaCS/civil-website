@@ -261,6 +261,7 @@ nav {
 }
 
 /* Contact page */
+/* Contact page */
 .contact {
     padding: 20px;
     text-align: center;
@@ -278,8 +279,8 @@ nav {
 }
 
 .contact #contact-form {
-    width: 100%;
-    max-width: 600px; /* Limits the maximum width of the form */
+    width: 100%; /* Use full width of the container */
+    max-width: 800px; /* Increase max-width to ensure the form is wider */
     background-color: #fff; /* White background for the form */
     padding: 20px; /* Adds padding inside the form */
     border-radius: 10px; /* Rounds the corners of the form */
@@ -301,7 +302,7 @@ nav {
 .contact input[type="text"],
 .contact input[type="email"],
 .contact textarea {
-    width: 100%;
+    width: 100%; /* Ensures input fields take full width of the form */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -318,7 +319,6 @@ nav {
 
 .contact button[type="submit"]:hover {
     background-color: #677D6A; /* Light green for hover effect */
-    color: #fff;
 }
 
 .contact-details {
@@ -334,6 +334,38 @@ nav {
     margin: 10px 0;
     color: #1A3636; /* Dark color for contact details text */
 }
+
+/* Styles for the thank you message */
+.thank-you-message {
+    display: none; /* Hidden by default */
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e6ffe6; /* Light green background */
+    border: 1px solid #b3ffb3; /* Slightly darker border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+.thank-you-message h3 {
+    color: #40534C; /* Medium green for thank-you message */
+}
+
+.thank-you-message button {
+    padding: 10px 20px;
+    background-color: #40534C; /* Medium green for button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.thank-you-message button:hover {
+    background-color: #677D6A; /* Light green for hover effect */
+}
+
+
 /* Contact Information */
 .contact-details {
     padding: 20px;
