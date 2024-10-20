@@ -8,15 +8,15 @@
 /* General Styles */
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    color: #1A3636; /* Dark color for primary text */
-    background-color: #F4F4F4; /* Light background color */
+    color: #EEEEEE; /* Light color for primary text */
+    background-color: #151515; /* Dark background color */
     line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-    background-color: #40534C;
-    color: #D6BD98;
+    background-color: #A91D3A; /* Dark red for header background */
+    color: #EEEEEE; /* Light color for header text */
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -51,14 +51,14 @@ nav {
 }
 
 .nav-links a {
-    color: #D6BD98;
+    color: #EEEEEE; /* Light color for navigation links */
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #677D6A;
+    color: #C73659; /* Slightly brighter red for hover effect */
 }
 
 .menu-toggle {
@@ -69,7 +69,7 @@ nav {
 .menu-toggle .bar {
     width: 25px;
     height: 3px;
-    background-color: #D6BD98;
+    background-color: #EEEEEE; /* Light color for menu bars */
     margin: 5px 0;
     transition: 0.3s;
 }
@@ -154,9 +154,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #EEEEEE;
+    background-color: #A91D3A; /* Dark red for hero background */
     text-align: center;
-    background-color: #677D6A; /* Light green color for hero background */
+    
 }
 
 .hero-content h2 {
@@ -173,8 +174,9 @@ nav {
 }
 
 .hero-content .btn {
-    background-color: #D6BD98; /* Accent color for button */
-    color: #1A3636; /* Dark color for button text */
+    
+    background-color: #C73659; /* Brighter red for button */
+    color: #151515; /* Dark color for button text */
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
@@ -184,12 +186,13 @@ nav {
 }
 
 .hero-content .btn:hover {
-    background-color: #B7A07A; /* Slightly darker shade of accent color */
+    background-color: #A91D3A; /* Darker red on hover */
 }
 
 .about {
     padding: 50px 20px;
-    background-color: #fff; /* White background for about section */
+    background-color: #151515; /* Dark background for about section */
+    color: #EEEEEE; /* Light color for text */
     text-align: center;
 }
 
@@ -211,7 +214,8 @@ nav {
 
 .highlights {
     padding: 50px 20px;
-    background-color: #F4F4F4; /* Light background color for highlights */
+    background-color: #151515; /* Dark background for highlights */
+    color: #EEEEEE; /* Light color for text */
     text-align: center;
 }
 
@@ -230,8 +234,8 @@ nav {
 }
 
 .card {
-    background-color: #1A3636; /* Dark color for cards */
-    color: #D6BD98; /* Accent color for card text */
+    background-color: #A91D3A; /* Dark red for cards */
+    color: #EEEEEE; /* Light color for card text */
     padding: 20px;
     max-width: 300px;
     text-align: left;
@@ -334,9 +338,9 @@ p {
 /* Button styling */
 .cta-button {
     padding: 10px 20px;
-    background-color: #f8a488; /* Button color */
+    background-color: #A91D3A; /* Brighter red for button */
+    color: #151515; /* Dark color for button text */
     border: none;
-    color: #fff;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
@@ -346,11 +350,12 @@ p {
 .cta-button a{
     text-decoration: none;
     color: black;
+    
 
 }
 
 .cta-button:hover {
-    background-color: #eb7a50; /* Change color on hover */
+    background-color: #b47271; /* Change color on hover */
 }
 
 @media (max-width: 768px) {
@@ -424,8 +429,8 @@ p {
 
 /* Footer */
 footer {
-    background-color: #40534C; /* Medium green color for footer */
-    color: #D6BD98; /* Accent color for footer text */
+    background-color: #A91D3A; /* Dark red for footer */
+    color: #EEEEEE; /* Light color for footer text */
      text-align:center; 
     flex-direction: column;
     padding: 20px 0;
@@ -439,7 +444,8 @@ footer p {
     font-size: 16px;
 }
 footer a{
-    color: #B7A07A;
+
+    color: #C73659; /* Brighter red for footer links */
     text-decoration: none;
     margin: 0 10px;
     font-size: 14px;
