@@ -467,6 +467,46 @@ footer footer-links a{
     margin: 0,10px;
     display: inline-block;
 }
+/* selecting place */
+
+.page-banner {
+    background: #f0f4f8;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.page-banner h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.page-banner label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #34495e;
+}
+
+.page-banner select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.page-banner select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
 
 /* Responsive adjustments for smaller devices */
 @media (max-width: 480px) {
